@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando algortimo com Python</title>
+    <link rel="stylesheet" href="python1.css">
+</head>
+<body>
+    <header>
+        <h1 class="cabeca">Entendendo algoritmo com Python</h1>
+    
+
+    
+        <section id="assuntos"> <nav>Tipos Primitivos</nav>  <nav>Variáveis</nav> <nav> Operadores Aritmétricos</nav> <nav> Operadores Lógicos</nav> <nav>Interação com o Usuário</nav></section>
+    </header>
+        
+            <main>
+            <article > <!--Tipos Primitivos-->
+                <h2>Tipos Primitivos</h2>
+                <p>
+                Tipo Primitivo é a parte em que as linguagens de programação diferenciam todas as suas classes. <br>
+                No Python, não é diferente, existem, basicamente, 4 tipos primitivos que, ao longo do tempo, irá te ajudar a com a criação de novos programas. Basicamente, os tipos primitivos são:
+                <li>
+                    <strong><u>str</u></strong>: Que siginifica string. String são a classe onde estão todas os caracteres disponíveis, mesmo sendo números, ele permite que o usuário digite qualquer coisa na tela.
+                </li>
+                <li style="margin-top: 5px;">
+                    <strong><u>int</u></strong>: Permite ao usuário digitar valores númericos inteiros, negativos ou positivos.
+                </li>
+                <li style="margin-top: 5px;">
+                    <strong><u>bool</u></strong>: Os valores boleanos existe somente 2, True: Verdade, False: falso, essa classe vai ser muito necessária na parte de condições.
+                <li style="margin-top: 5px;">
+                    <strong><u>float</u></strong>: Que são todos os dígitos inteiros
+
+                </li>
+
+                </li>
+                </p>
+            </article>
+            <article> <!--Variáveis-->
+                <h2>Variáveis</h2>
+
+                <p1 style="margin-top: 10px; font-family: calibri;">
+                As variáveis é a parte onde a memória do computador guarda informações, elas são dispostas da seguinte forma: <br>
+
+<pre>
+    <code>
+variavela = 'Variável'
+    </code>
+</pre>
+            Como pode ser visto, uma variável não pode ser declarada como espaços e acentos, no Ptthon até pode ter acentos, mas nunca é bom se acostumar com acentuação, pois, nas outras linguagens, a acentuação não é permitida.
+                </p1>
+            </article>
+            <article>
+                <h2> Operadores Aritmétricos
+                </h2>
+                <p>Os Operadores Aritmétricos são usandos para realizar cálculos da matemática, pois a programação, em geral, usa muita matemática. Os operadores são os seguintes. <br>
+                    <ul type='square'>
+                        <li>
+                            '+' que representa a soma
+                        </li>
+                        <li>
+                            '-' que representa a subtração
+                        </li>
+                        <li> '*' que representa multiplicação</li>
+                        <li>'**' que representa a potência</li>
+                        <li>'/' que representa a divisão</li>
+                        <li>
+                            '//' que reresenta a divisão inteira, ou seja: 9//2 = 4
+                        </li>
+                        <li>
+                            '%' que representa o resto da divisão inteira, ou seja: 9 % 2 = 1
+                        </li>
+                    </ul> <br>
+                    <p>
+                        Todas esses operadores são importantes no código como esse.
+<pre>
+<code>
+n = int(input('Digite o primeiro número: '))
+n2 = int(input('Digite o segundo número: '))
+print(f'A soma entre {n} e {n2} é {n + n2}')
+print(f'A diferença entre {n} e {n2} é {n - n2}')
+print(f'O produto entre {n} e {n2} é {n * n2}')
+print(f'O resultado da exponenciação entre {n} e {n2} é {n ** n2}')
+print(f'A divisão entre {n} e {n2} é {n / n2}')
+print(f'A divisão inteira entre {n} e {n2} é {n // n2}')
+print(f'O resto da divisão entre {n} e {n2} é {n % n2}')
+</code>
+</pre> 
+                    </p>
+                 São operações bem comum dentro do ramo da programação.
+
+                </p>
+            </article>
+            <article>
+                <h2>Operadores Lógicos</h2>
+                <p>
+                    Esses operadores são importante em todo seu aprendizado em python, vamos apresenta-los: <br>
+                <li> and : que siginifica 'e'</li>
+                <li> or : que significa 'ou'</li>
+                São operadores muitos importantes para a continuidade dos seus programas
+                </p>
+            </article>
+            <article>
+                <h2>Interação com o Usuário</h2>
+
+            <p>
+                Essa parte, realmente, no início, é a mais importante de seu apredizado, pois você, programador, sempre tem que ter em mente que o usuário sempre pode errar, portanto, é sempre necessário tomar o máximo de cuidado com que irá aparecer ao usuário.
+
+
+            </p>
+            <p>
+                O "input" é onde você consegue fazer o usuário digitar algo, na linguagem python, vamos usar o mesmo código.
+    <pre>
+    <code>
+    n = int(input('Digite o primeiro número: '))
+    n2 = int(input('Digite o segundo número: '))
+    print(f'A soma entre {n} e {n2} é {n + n2}')
+    print(f'A diferença entre {n} e {n2} é {n - n2}')
+    print(f'O produto entre {n} e {n2} é {n * n2}')
+    print(f'O resultado da exponenciação entre {n} e {n2} é {n ** n2}')
+    print(f'A divisão entre {n} e {n2} é {n / n2}')
+    print(f'A divisão inteira entre {n} e {n2} é {n // n2}')
+    print(f'O resto da divisão entre {n} e {n2} é {n % n2}')
+    </code>
+    </pre>  
+        Na linha 1 e 2 existe o input com intuito do usuário digitar os números para que as operações sejam feitas com os valores que ele quiser.           
+            </p>
+            </article>
+                </section>
+            </main>
+        
+
+
+
+</body>
+</html>

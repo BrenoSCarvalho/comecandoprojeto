@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #041933;
+    --cor2: #1D324D;
+    --cor3: #093061;
+    --cor4: #0A3F80;
+    --cor5: #1057AD;
+    --fonteprincipal: arial;
+    --fontdestaque: 'Bebas Neue';
+    --fontedetitulos: 'PT Mono';
+
+}
+body{
+    font-family: var(--fonteprincipal);
+}
+header{
+    background-image:linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+}
+header h1{
+
+        color: white;
+        font-family: var(--fontdestaque);
+        padding-top: 30px; /*Essa parte é para que o h1, que estava colado no alto da tela, fique mais para baixo, o margin top fazeria que todo o header ficasse com margem para o topo, mas o padding deixa somente o h1 com margem para o topo*/
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
+    }
+header p{
+
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-size: 1.2em;
+        max-width: 500px;
+        margin: auto;
+        padding: 5px;
+        margin-bottom: 10px;
+    
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.438);
+    margin: auto;
+
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold; /*Para ficar negrito */
+    font-size: 0.89em;
+
+}
+nav > a:hover{
+    background-color: var(--cor1);
+    border-radius: 5px;
+    transition-duration: 0.5s; /*Serve para fazer uma trasição no passar do mause*/
+
+}
+
+main{
+    min-width: 100px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+main a{
+    text-decoration: none;
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+}
+main p{
+    margin: 15px 2px ;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 1.5em; /*Espaçamento entre linhas*/
+}
+main h1{
+    font-family: var(--fontedetitulos);
+    font-size: 1.7em;
+    font-weight: bold; /*Para ficar negrito */
+    padding: 20px;
+}
+main h2{
+    color: var(--cor1);
+    font-size: bold;
+    font-family: var(--fontedetitulos);
+    font-size: 1.4em;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    padding: 5px;
+}
+h2{
+    font-size: bold;
+}
+div.texto  h3{
+    background-image: linear-gradient(to rigth, rgba(255, 255, 255, 0.568), transparent);
+    color: green;
+    text-align: left;
+    padding: 10px;
+    background-color: none;
+}
+main ul{
+    list-style-position: inside ;
+}
+
+aside{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+    margin-top: 20px;
+}
+aside  ul{
+    list-style-type: '\2714\00a0\00a0'; /*Comando para colocar um tcheq na frente da lista, não esquecer das aspas, 00a0 = espaços*/
+    list-style-position: inside; /*Comando para colocaer as bolinhas das lista pra dentro*/
+
+    
+
+}
+aside.aside h1, h4{
+    background-color: var(--cor1);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 5px;
+    border-radius: 20px 20px 0px 0px ;
+    text-align: center;
+}
+
+
+main img{
+    width: 100%;
+}
+img.img{
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+img.m{
+    max-width: 700px;
+    max-width: 400;
+    margin: auto;
+}
+div.video{
+    background-color: white;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%; /*Caso colocar vídeo voltar aqui novamente, parte bem complexa*/
+    position: relative;
+
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: 90%;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px;
+    margin-top: 10px;
+}
+
